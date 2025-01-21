@@ -1,0 +1,399 @@
+
+body {
+  margin: 0 10px;
+  padding: 10px;
+  background-image: url(assests/mainbgofwebsiite.jpg);
+}
+.mynav{
+    border-bottom: 2px 2px 2px  black;
+    margin: 0px 10px;
+}
+.chnav {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px purple;
+    margin: 0 5px;
+}
+
+.chnav:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    color: white; /* Text color change when hovering */
+}
+
+/* Style for the login button */
+.chnavbtn {
+    transition: transform 0.3s ease;
+    box-shadow: 2px 2px 2px purple;
+}
+
+.chnavbtn:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    background-color: #0056b3; /* Optional: Change background color on hover */
+}
+
+.imgbg{
+    transition: all ease-in 0.2s;
+}
+.imgbg:hover{
+   
+    border-radius: 50%;
+    color: whitesmoke;
+    background: linear-gradient(135deg, #2575fc 30%, #4a89fd 50%, #6a11cb 70%);
+transform: scale(1.5);
+}
+
+/* form section */
+/* Main Layout Container */
+.container {
+    display: flex; /* Flexbox for layout */
+    justify-content: space-between; /* Space between form and image */
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Space between items */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Form Styling */
+.form-container {
+    flex: 1; /* Take 50% of space */
+    max-width: 50%;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Styling */
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack elements on small screens */
+        align-items: center;
+    }
+
+    .form-container,
+    .image-container {
+        max-width: 100%;
+    }
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 10px rgba(106, 17, 203, 0.4);
+    outline: none;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-container h2 {
+    text-align: center;
+   color: black;
+   font-weight: bolder;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    transition: all ease 0.2s;
+}
+.form-container h2:hover{
+    transform: scale(1.05);
+}
+
+/* Smoke Pop-up Overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s;
+}
+
+.overlay.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.popup h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.popup p {
+    color: #555;
+}
+
+.ok-button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.ok-button:hover {
+    background-color: #228B22;
+}
+.imgcont{
+    box-shadow: 2px 8px 20px black;
+     transition: all ease 0.2s;
+}
+
+.imgcont:hover{
+    transform: scale(1.05);
+}
+
+.map-container {
+
+    text-align: center;
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+
+}
+
+/* footer */
+/* footerr */
+.iskcon-footer {
+    background-color: rgba(11, 1, 57, 0.852);
+    color: rgba(1, 51, 29, 0.858);
+    padding: 20px; /* Reduced padding for a smaller size */
+    text-align: left;
+    position: relative;
+    background-image: url(assests/mandala-design-background.jpg);
+    background-size: cover; /* Ensures the image fits the container */
+    background-repeat: no-repeat; /* Prevents repetition */
+    background-position: center; /* Centers the image */
+  }
+  
+  /* Container for the footer content */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px; /* Reduced margin for compact layout */
+  }
+  
+  /* About ISKCON Section */
+  .footer-about {
+    flex: 1;
+    max-width: 300px; /* Reduced max-width for smaller layout */
+    text-align: left;
+  }
+  
+  .footer-logo {
+    width: 120px; /* Adjusted size */
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effect */
+  }
+  .footer-logo:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo */
+    filter: brightness(1.2) contrast(1.1); /* Enhance brightness and contrast for a glowing effect */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+  }
+  
+  .footer-about h2 {
+    font-size: 20px; /* Reduced font size */
+    color: #043477d7;
+    margin-bottom: 8px;
+  }
+  
+  .footer-about p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-right: 20px; /* Reduced margin for compactness */
+  }
+  
+  /* Our Services Section */
+  .footer-services {
+    flex: 2;
+    max-width: 400px; /* Adjusted for a smaller size */
+  }
+  
+  .footer-services h3 {
+    font-size: 18px; /* Reduced font size */
+    color: #043477d7;
+    margin-bottom: 10px;
+  }
+  
+  .footer-services ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-services ul li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .service-img {
+    width: 40px; /* Reduced size */
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+  }
+  
+  /* Hover effect for service images */
+  .footer-services ul li .service-img:hover {
+    transform: scale(1.2); /* Enlarge the image slightly */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+  }
+  
+  /* Optional: Add hover effect to text as well */
+  .footer-services ul li:hover {
+    color:#f4a162; /* Change text color on hover */
+    cursor: pointer;
+  }
+  
+  
+  /* Contact Us Section */
+  .footer-contact {
+    flex: 1;
+    max-width: 300px; /* Adjusted size */
+  }
+  
+  .footer-contact h3 {
+    font-size: 18px; /* Reduced font size */
+    color: #043477d7;
+    margin-bottom: 10px;
+  }
+  
+  .footer-contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-contact ul li {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .footer-contact ul li strong {
+    color: #273348;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 10px; /* Reduced margin */
+    font-size: 12px; /* Smaller text */
+    color: #b0bbc3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-about, .footer-services, .footer-contact {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .footer-about p, .footer-contact ul li {
+      font-size: 12px;
+    }
+  
+    .footer-services ul li {
+      text-align: left;
+    }
+  }
+  

@@ -1,0 +1,353 @@
+/* navbar */
+
+body{
+    padding: 10px;
+    margin: 0px 10px;
+    background-image: url(assests/mainbgofwebsiite.jpg);
+}
+
+.mynav{
+    border-bottom: 2px 2px 2px  black;
+    margin: 0px 10px;
+}
+.chnav {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px purple;
+    margin: 0 5px;
+}
+
+.chnav:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    color: white; /* Text color change when hovering */
+}
+
+/* Style for the login button */
+.chnavbtn {
+    transition: transform 0.3s ease;
+    box-shadow: 2px 2px 2px purple;
+}
+
+.chnavbtn:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    background-color: #0056b3; /* Optional: Change background color on hover */
+}
+/* side bar  */
+.sidebar {
+    width: 280px;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  .btn.btn-toggle {
+    background-color: #007bff;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+
+
+/* footer */
+/* footerr */
+.iskcon-footer {
+  background-color: rgba(11, 1, 57, 0.852);
+  color: rgba(1, 51, 29, 0.858);
+  padding: 20px; /* Reduced padding for a smaller size */
+  text-align: left;
+  position: relative;
+  background-image: url(assests/mandala-design-background.jpg);
+  background-size: cover; /* Ensures the image fits the container */
+  background-repeat: no-repeat; /* Prevents repetition */
+  background-position: center; /* Centers the image */
+}
+
+/* Container for the footer content */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 20px; /* Reduced margin for compact layout */
+}
+
+/* About ISKCON Section */
+.footer-about {
+  flex: 1;
+  max-width: 300px; /* Reduced max-width for smaller layout */
+  text-align: left;
+}
+
+.footer-logo {
+  width: 120px; /* Adjusted size */
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effect */
+}
+.footer-logo:hover {
+  transform: scale(1.1); /* Slightly enlarge the logo */
+  filter: brightness(1.2) contrast(1.1); /* Enhance brightness and contrast for a glowing effect */
+  cursor: pointer; /* Change cursor to indicate interactivity */
+}
+
+.footer-about h2 {
+  font-size: 20px; /* Reduced font size */
+  color: #043477d7;
+  margin-bottom: 8px;
+}
+
+.footer-about p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-right: 20px; /* Reduced margin for compactness */
+}
+
+/* Our Services Section */
+.footer-services {
+  flex: 2;
+  max-width: 400px; /* Adjusted for a smaller size */
+}
+
+.footer-services h3 {
+  font-size: 18px; /* Reduced font size */
+  color: #043477d7;
+  margin-bottom: 10px;
+}
+
+.footer-services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-services ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.service-img {
+  width: 40px; /* Reduced size */
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+}
+
+/* Hover effect for service images */
+.footer-services ul li .service-img:hover {
+  transform: scale(1.2); /* Enlarge the image slightly */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+
+/* Optional: Add hover effect to text as well */
+.footer-services ul li:hover {
+  color:#f4a162; /* Change text color on hover */
+  cursor: pointer;
+}
+
+
+/* Contact Us Section */
+.footer-contact {
+  flex: 1;
+  max-width: 300px; /* Adjusted size */
+}
+
+.footer-contact h3 {
+  font-size: 18px; /* Reduced font size */
+  color: #043477d7;
+  margin-bottom: 10px;
+}
+
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-contact ul li {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footer-contact ul li strong {
+  color: #273348;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 10px; /* Reduced margin */
+  font-size: 12px; /* Smaller text */
+  color: #b0bbc3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-about, .footer-services, .footer-contact {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-about p, .footer-contact ul li {
+    font-size: 12px;
+  }
+
+  .footer-services ul li {
+    text-align: left;
+  }
+}
+
+  .encymainbg{
+    background-image: url(assests/encybg.jpg);
+  }
+  .cbtn{
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    color: white;
+    transition: all ease 0.3s;
+  }
+  .cbtn:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 2px grey;
+  }
+  /* search bar */
+  .search{
+    border-radius: 2%;
+    border-color: #007bff;
+    transition: all ease-in 0.2s;
+  }
+  .search:hover{
+    transform: scale(1.05);
+  }
+  /* add content */
+
+
+        .form-container {
+          background-image: url(assests/mainbgofwebsiite.jpg);
+            color: #000;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            display: none;
+            position: fixed;
+            top: 55%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1000;
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #2575fc;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .form-container input, .form-container textarea, .form-container button {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-container textarea {
+            resize: vertical;
+            height: 100px;
+        }
+        .form-container button {
+            background-color: #2575fc;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .form-container button:hover {
+            background-color: #6a11cb;
+        }
+        .form-container .btn-secondary {
+            background-color: #ccc;
+            color: #000;
+        }
+        .form-container .btn-secondary:hover {
+            background-color: #aaa;
+        }
+        .form-container .btn-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            z-index: 999;
+        }
+        .popup-message {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #2575fc;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        /* for upload btn  */
+  label[for="file"] {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .file-name {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+    word-wrap: break-word;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  label[for="file"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+
+  /* Active effect for the button */
+  label[for="file"]:active {
+    transform: scale(0.95);
+  }

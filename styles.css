@@ -1,0 +1,660 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playwrite+AU+SA:wght@100..400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  margin: 0 10px;
+  padding: 10px;
+  background-image: url(assests/mainbgofwebsiite.jpg);
+}
+/* Navbar Styling */
+.navbar {
+  font-size: 16px;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Navbar links */
+.nav-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  transition: transform 0.3s ease;
+  color: #495057;
+  font-size: 1.25rem;
+  padding: 15px 20px;
+}
+
+.nav-link .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.nav-link .text {
+  font-size: 1rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.nav-link:hover .icon {
+  transform: translateY(-3px);
+}
+
+.nav-link:hover .text {
+  opacity: 1;
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  border-radius: 25% 10%;
+}
+
+.nav-link:focus .text {
+  outline: none;
+  box-shadow: 0 0 10px rgba(37, 117, 252, 0.8);
+}
+
+/* Centered ISKCON logo */
+.navbar-brand img {
+  display: block;
+  margin: 0 auto;
+  max-width: 150px;
+  transition: transform 0.3s ease;
+  transform: translateX(-50px);
+}
+.navbar-brand img:hover {
+  filter: drop-shadow(2px 2px 10px #6a11cb);
+}
+
+/* Search bar */
+.form-control {
+  width: 250px;
+  font-size: 1rem;
+  padding: 10px;
+}
+/* login  */
+.btn-outline-primary {
+  transition: all 0.3s ease;
+}
+.btn-outline-primary:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: scale3d(1.05, 1.05, 1);
+}
+.herobtn{
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  color: white;
+  transition: all ease 0.3s;
+}
+.herobtn:hover{
+  transform: scale(1.05);
+  box-shadow: 2px 2px 2px grey;
+  color: whitesmoke;
+}
+/* search bar */
+.form-control {
+  transition: all 0.3s ease;
+}
+.form-control:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  border-color: #6a11cb;
+  color: white !important;
+  transform: scale3d(1.05, 1.05, 1);
+}
+.form-control:hover::placeholder {
+  color: whitesmoke;
+}
+
+/* Krishna Message Section */
+.krishna-message {
+  background-color: #f5f5f5;
+  padding: 10px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.krishna-message p {
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #333;
+  text-shadow: 2px 2px 4px #7c2dd0b6;
+  text-shadow: linear-gradient(135deg, #2575fc, #6a11cb);
+  opacity: 0; /* Initially hidden */
+  animation: slideUp 3s ease-out forwards; /* Add animation */
+}
+
+/* Animation to move the text from bottom to top */
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Carousel Item Shadows */
+/* Carousel Container */
+.carousel {
+  width: 100%; /* Set width to 100% for a full-width carousel */
+  margin: 0 auto; /* Center align the carousel */
+  border-radius: 15px; /* Rounded corners for a modern look */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* 3D shadow for a sleek effect */
+  overflow: hidden; /* Prevent images from overflowing */
+}
+
+/* Carousel Item Images */
+.carousel-item img {
+  width: 100%;
+  height: 500px; /* Fixed height for consistency */
+  object-fit: cover; /* Ensures images fill the container without distortion */
+  border-radius: 15px; /* Match the rounded corners of the carousel */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow for each image to add depth */
+  transition: transform 0.3s ease; /* Smooth transition effect on hover */
+}
+
+/* Hover effect on images */
+.carousel-item img:hover {
+  transform: scale(1.05); /* Slight zoom effect for interactivity */
+}
+
+/* Carousel Caption */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: #fff; /* White text color */
+  border-radius: 5px; /* Rounded corners for captions */
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow effect for text */
+}
+/* life cycle section  */
+/* Styling for Krishna Life Cycle Images */
+.krishna-img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Default box shadow */
+  border-radius: 50%; /* Ensure images remain circular */
+}
+
+/* Hover Effect */
+.krishna-img:hover {
+  transform: scale(1.1); /* Scale up slightly */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5); /* Darker, larger shadow on hover */
+}
+
+
+h2.fw-normal {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+
+
+.btn-secondary {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  transform: scale(1.05);
+}
+
+
+/* from registration btn */
+/* Section Heading and Description */
+.text-center h2 {
+  font-size: 2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.text-center p {
+  font-size: 1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Button Styling */
+.btn-form {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-form:hover {
+  background:linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: scale(1.05);
+}
+
+/* SVG Icon Adjustments */
+.bi {
+  fill: currentColor;
+}
+
+/* cards section  */
+.heading {
+  font-family: 'Arial', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: #2c3e50; /* Deep slate color */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 2rem 0;
+  padding: 1rem;
+  background: linear-gradient(135deg, #ff9a8b, #ff6a00); /* Gradient background */
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for the heading */
+.heading:hover {
+  color: #fff;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Change gradient on hover */
+  transform: scale(1.05); /* Slightly enlarge the heading */
+}
+
+/* Additional styling for the border-bottom */
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.border-bottom {
+  border-bottom: 2px solid #333;
+}
+      /* Card Styling */
+      .card {
+          position: relative;
+          overflow: hidden;
+          border-radius: 1rem;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Background image */
+      .card-cover {
+          background-size: cover;
+          background-position: center center;
+          height: 300px;
+          transition: all 0.3s ease; /* Smooth transition for background change */
+      }
+
+      /* Overlay Effect */
+      .card .card-cover::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0); /* Initially transparent */
+          transition: all 0.3s ease; /* Smooth transition */
+          opacity: 0;
+      }
+
+      /* Content Inside the Card */
+      .card .d-flex {
+          z-index: 1; /* Ensures content is above the background */
+          opacity: 0; /* Initially hide content */
+          transition: all 0.3s ease;
+      }
+
+      /* Heading and Button Styling */
+      .card h3 {
+          font-size: 1.5rem; /* Adjust as needed */
+      }
+
+      /* Hover Effects */
+      .card:hover .card-cover::after {
+          opacity: 0.7; /* Darken background on hover */
+      }
+
+      .card:hover .d-flex {
+          opacity: 1; /* Show content on hover */
+      }
+
+      .card:hover .card-cover {
+          filter: brightness(50%); /* Dull background on hover */
+      }
+
+      /* Button Styling */
+      .expbtn {
+        display: inline-flex;
+          align-items: center;
+ 
+          background: linear-gradient(135deg, #2575fc, #6a11cb);
+          border: none;
+          padding: 10px 20px;
+          border-radius: 25px;
+          transition: all ease 0.3s;
+      }
+.expbtn:hover{
+  transform: scale(1.05);
+}
+
+.lbtn{
+transition: all ease 0.3s;
+
+}
+.lbtn:hover{
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transform: scaleY(1.1);
+}
+/* Card Content when not hovered */
+      .card .d-flex {
+          opacity: 0;
+          pointer-events: none; /* Disable interaction when not hovered */
+      }
+
+      .card:hover .d-flex {
+          opacity: 1;
+          pointer-events: auto;
+      }
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .carousel {
+    width: 100%; /* Ensure the carousel takes full width on smaller screens */
+  }
+
+  .carousel-item img {
+    height: 300px; /* Adjust height on smaller screens */
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .navbar-brand img {
+    max-width: 120px;
+  }
+
+  .nav-link {
+    flex-direction: row;
+    text-align: left;
+    padding: 12px 15px;
+    font-size: 1.1rem;
+  }
+
+  .form-control {
+    width: 200px;
+  }
+
+  .btn-outline-primary {
+    font-size: 0.9rem;
+  }
+
+  .navbar .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .d-flex {
+    margin-top: 10px;
+  }
+}
+
+/* popup content  */
+/* Basic styling for the login popup */
+#loginPopup {
+  display: none; /* Initially hidden */
+  position: fixed; /* Stay in place */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full screen width */
+  height: 100%; /* Full screen height */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  justify-content: center; /* Center the content */
+  align-items: center; /* Center the content */
+  z-index: 1000; /* Make sure it's on top of other content */
+}
+
+/* Styling the content inside the popup */
+.logincontainer {
+  width: 100%;
+  max-width: 400px;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  width: 150px; /* Increase the width */
+  height: auto;
+  margin: 0 auto 20px;
+}
+
+
+/* Titles */
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4f4f4f;
+}
+
+.subtitle {
+  color: #7f7f7f;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.form {
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #4f4f4f;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  border-color: #d4a373;
+  outline: none;
+}
+/* login btn */
+.loginbtn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #d4a373;
+  color: white; /* White text */
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.loginbtn:hover {
+  background: #bf8640;
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.loginbtn:active {
+  background-color: #3e8e41; /* Even darker green when clicked */
+}
+
+
+
+.encymainbg{
+  filter: drop-shadow(2px 2px 2px purple);
+}
+/* footerr */
+.iskcon-footer {
+  background-color: rgba(11, 1, 57, 0.852);
+  color: rgba(1, 51, 29, 0.858);
+  padding: 20px; /* Reduced padding for a smaller size */
+  text-align: left;
+  position: relative;
+  background-image: url(assests/mandala-design-background.jpg);
+  background-size: cover; /* Ensures the image fits the container */
+  background-repeat: no-repeat; /* Prevents repetition */
+  background-position: center; /* Centers the image */
+}
+
+/* Container for the footer content */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 20px; /* Reduced margin for compact layout */
+}
+
+/* About ISKCON Section */
+.footer-about {
+  flex: 1;
+  max-width: 300px; /* Reduced max-width for smaller layout */
+  text-align: left;
+}
+
+.footer-logo {
+  width: 120px; /* Adjusted size */
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effect */
+}
+.footer-logo:hover {
+  transform: scale(1.1); /* Slightly enlarge the logo */
+  filter: brightness(1.2) contrast(1.1); /* Enhance brightness and contrast for a glowing effect */
+  cursor: pointer; /* Change cursor to indicate interactivity */
+}
+
+.footer-about h2 {
+  font-size: 20px; /* Reduced font size */
+  color: #043477d7;
+  margin-bottom: 8px;
+}
+
+.footer-about p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-right: 20px; /* Reduced margin for compactness */
+}
+
+/* Our Services Section */
+.footer-services {
+  flex: 2;
+  max-width: 400px; /* Adjusted for a smaller size */
+}
+
+.footer-services h3 {
+  font-size: 18px; /* Reduced font size */
+  color: #043477d7;
+  margin-bottom: 10px;
+}
+
+.footer-services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-services ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.service-img {
+  width: 40px; /* Reduced size */
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+}
+
+/* Hover effect for service images */
+.footer-services ul li .service-img:hover {
+  transform: scale(1.2); /* Enlarge the image slightly */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+
+/* Optional: Add hover effect to text as well */
+.footer-services ul li:hover {
+  color:#f4a162; /* Change text color on hover */
+  cursor: pointer;
+}
+
+
+/* Contact Us Section */
+.footer-contact {
+  flex: 1;
+  max-width: 300px; /* Adjusted size */
+}
+
+.footer-contact h3 {
+  font-size: 18px; /* Reduced font size */
+  color: #043477d7;
+  margin-bottom: 10px;
+}
+
+.footer-contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-contact ul li {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footer-contact ul li strong {
+  color: #273348;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 10px; /* Reduced margin */
+  font-size: 12px; /* Smaller text */
+  color: #b0bbc3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-about, .footer-services, .footer-contact {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer-about p, .footer-contact ul li {
+    font-size: 12px;
+  }
+
+  .footer-services ul li {
+    text-align: left;
+  }
+}

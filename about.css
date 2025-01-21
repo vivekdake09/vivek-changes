@@ -1,0 +1,341 @@
+
+body {
+  margin: 0 10px;
+  padding: 10px;
+  background-image: url(assests/mainbgofwebsiite.jpg);
+}
+.mynav{
+    border-bottom: 2px 2px 2px  black;
+    margin: 0px 10px;
+}
+.chnav {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px purple;
+    margin: 0 5px;
+}
+
+.chnav:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    color: white; /* Text color change when hovering */
+}
+
+/* Style for the login button */
+.chnavbtn {
+    transition: transform 0.3s ease;
+    box-shadow: 2px 2px 2px purple;
+}
+
+.chnavbtn:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+    background-color: #0056b3; /* Optional: Change background color on hover */
+}
+body {
+    font-family: 'Poppins', Arial, sans-serif; /* Modern and clean font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Soft background */
+    color: #333; /* Default text color */
+}
+/* Section Styling */
+section#content {
+    padding: 3rem 1rem; /* Spacing for section */
+    background: linear-gradient(135deg, #ffffff, #f1f1f1); /* Subtle gradient background */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Gentle shadow for a floating effect */
+}
+
+/* Heading Styling */
+section#content h1 {
+    color: #2c3e50; /* Deep slate blue for text */
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+/* Paragraph Styling */
+section#content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555; /* Softer gray for readability */
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    text-align: center;            
+    background-color: rgba(248, 250, 250, 0.9);
+    padding: 30px;
+    margin-bottom: 40px;
+    margin-top: -20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #011832;
+    border-bottom: 2px solid #e4eefa;
+    padding-bottom: 10px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+.achievement {
+    position: relative;
+    height: auto;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.achievement img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.achievement:hover img {
+    transform: scale(1.05);
+}
+.achievement-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.achievement:hover .achievement-overlay {
+    opacity: 1;
+}
+.achievement-overlay p {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    padding: 20px;
+}
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 450px; 
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .carousel-inner {
+    display: flex;
+    width: 200%;
+    animation: slide-animation 15s infinite;
+    }
+    
+    .carousel-item {
+    flex: 0 0 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .carousel-item img {
+    max-height: 20%; 
+    max-width: auto; 
+    object-fit: cover; 
+    border-radius: 8px;
+    }
+    
+    
+    .values-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+        margin-top: 30px;
+    }
+    .value-item {
+        text-align: center;
+        padding: 30px;
+        background-color: rgba(235, 235, 246, 0.8);
+        border-radius: 8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .value-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    }
+    .value-item i {
+        font-size: 2.5rem;
+        color: #0070f3;
+        margin-bottom: 15px;
+    }
+    .value-item h3 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    /* Footer Styling */
+.iskcon-footer {
+    background-color: rgba(11, 1, 57, 0.852);
+    color: rgba(1, 51, 29, 0.858);
+    padding: 20px; /* Reduced padding for a smaller size */
+    text-align: left;
+    position: relative;
+    background-image: url(assests/mandala-design-background.jpg);
+    background-size: cover; /* Ensures the image fits the container */
+    background-repeat: no-repeat; /* Prevents repetition */
+    background-position: center; /* Centers the image */
+  }
+  
+  /* Container for the footer content */
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px; /* Reduced margin for compact layout */
+  }
+  
+  /* About ISKCON Section */
+  .footer-about {
+    flex: 1;
+    max-width: 300px; /* Reduced max-width for smaller layout */
+    text-align: left;
+  }
+  
+  .footer-logo {
+    width: 120px; /* Adjusted size */
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition for hover effect */
+  }
+  .footer-logo:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo */
+    filter: brightness(1.2) contrast(1.1); /* Enhance brightness and contrast for a glowing effect */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+  }
+  
+  .footer-about h2 {
+    font-size: 20px; /* Reduced font size */
+    color: #043477d7;
+    margin-bottom: 8px;
+  }
+  
+  .footer-about p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-right: 20px; /* Reduced margin for compactness */
+  }
+  
+  /* Our Services Section */
+  .footer-services {
+    flex: 2;
+    max-width: 400px; /* Adjusted for a smaller size */
+  }
+  
+  .footer-services h3 {
+    font-size: 18px; /* Reduced font size */
+    color: #043477d7;
+    margin-bottom: 10px;
+  }
+  
+  .footer-services ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-services ul li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .service-img {
+    width: 40px; /* Reduced size */
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+  }
+  
+  /* Hover effect for service images */
+  .footer-services ul li .service-img:hover {
+    transform: scale(1.2); /* Enlarge the image slightly */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+  }
+  
+  /* Optional: Add hover effect to text as well */
+  .footer-services ul li:hover {
+    color:#f4a162; /* Change text color on hover */
+    cursor: pointer;
+  }
+  
+  
+  /* Contact Us Section */
+  .footer-contact {
+    flex: 1;
+    max-width: 300px; /* Adjusted size */
+  }
+  
+  .footer-contact h3 {
+    font-size: 18px; /* Reduced font size */
+    color: #043477d7;
+    margin-bottom: 10px;
+  }
+  
+  .footer-contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-contact ul li {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .footer-contact ul li strong {
+    color: #273348;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    text-align: center;
+    margin-top: 10px; /* Reduced margin */
+    font-size: 12px; /* Smaller text */
+    color: #b0bbc3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-about, .footer-services, .footer-contact {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .footer-about p, .footer-contact ul li {
+      font-size: 12px;
+    }
+  
+    .footer-services ul li {
+      text-align: left;
+    }
+  }
+  

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISKCON NVCC/home/dashboard</title>
+    <link rel="icon" href="assests/iskcon_logo-removebg-preview.png" type="icon"  >
+    <link rel="stylesheet" href="dashboard.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <div class="dashboard-container" style="background-color:rgb(232, 229, 246);">
+        <!-- Sidebar -->
+         
+        <aside class="sidebar">
+            <div>
+                <img class="imgg" src="assests/iskcon_logo-removebg-preview.png" alt="logo" width="110px" >
+            </div>
+            <div class="logo">
+                <span style="font-family:Georgia, 'Times New Roman', Times, serif; ">ISKCON</span></div>
+            <nav>
+                <ul>
+                    <li class="active">Dashboard</li>
+                    <li>Events</li>
+                    <li>Volunteers</li>
+                    <li>Donations</li>
+                </ul>
+
+                <!-- Dropdown Menu: Applications -->
+                <h4 class="dropdown-btn">Events <span class="arrow">▼</span></h4>
+                <ul class="dropdown-content">
+                    <li>Festivals</li>
+                    <li>Bhakti Programs</li>
+                    <li>Weekly Kirtans</li>
+                    <li>Shree Krishna Janmashtami</li>
+                    <li>Kartik and Deepavali</li>
+                    <li>Ratha Yatra Festival</li>
+                </ul>
+
+                <!-- Dropdown Menu: Applications -->
+                <h4 class="dropdown-btn">Media<span class="arrow">▼</span></h4>
+                <ul class="dropdown-content">
+                    <li>Daily Darshan Library</li>
+                    <li>Live Darshan</li>
+                    <li>Video Gallery</li>
+                    <li>Visitor Faculty</li>
+                </ul>
+
+                <!-- Dropdown Menu: Components -->
+                <h4 class="dropdown-btn">About Us<span class="arrow">▼</span></h4>
+                <ul class="dropdown-content">
+                    <li>ISKCON NVCC</li>
+                    <li>Our History</li>
+                    <li>Mission & Vision</li>
+                    <li>Founder: Srila Prabhupada</li>
+                    <li>Philosophy</li>
+                </ul>
+                <ul>
+                    <li>Contact Us</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <main class="maincontentt">
+                <header>
+                    <h1  class="topic" >Welcome to ISKCON </h1>
+                 <a href="index.html">   <img class="image-container" src="assests/back-arrow.svg" alt="home button" width="30px"></a>
+                </header></main>
+
+            <header>
+                
+                <input type="text" placeholder="Search here...">
+                <div class="profile">
+                    <img src="assests/icons8-search.svg" alt="User">
+                </div>
+                <!-- Button to open popup -->
+    <button id="openBtn" style="margin-right: 50px; margin-bottom: 15px;">View Pending Requests</button>
+
+    <!-- Popup modal -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Pending Requests</h2>
+            <ul id="pendingList">
+                <li>Rama Sharma</li>
+                <li>Uday Goswami</li>
+                <li>Sudha Surve</li>
+            </ul>
+          <button id="okBtn" onclick="close()" >OK</button>
+        </div>
+       
+    </div>
+    <button class="content" style="margin-right: px; margin-bottom: 15px;" onclick="showForm()"> Add Content</button>
+    <div class="form-container" id="formContainer">
+        <h2>Add Content</h2>
+        <form id="contentForm" onsubmit="submitForm(event)">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="content">Content</label>
+            <textarea id="content" name="content" placeholder="Write your content here..." required></textarea>
+
+            <label for="file">Upload File</label>
+            <input type="file" id="file" name="file" accept="image/*,video/*,application/pdf">
+
+            <div class="btn-group">
+                <button type="submit">Submit</button>
+                <button type="button" class="btn-secondary" onclick="hideForm()">Back</button>
+            </div>
+        </form>
+    </div>
+
+            </header>
+
+            <!-- Cards Section -->
+            <section class="cards">
+                <div class="card">
+                    <h3>789600</h3>
+                    <p>Total Visitors</p>
+                </div>
+                <div class="card">
+                    <h3>160</h3>
+                    <p>Active Volunteers</p>
+                </div>
+                <div class="card">
+                    <h3>$77509</h3>
+                    <p>Total Donations</p>
+                </div>
+                <div class="card">
+                    <h3>9</h3>
+                    <p>Total Blogs</p>
+                </div>
+                <div class="card">
+                    <h3>10</h3>
+                    <p>Upcoming Events</p>
+                </div>
+            </section>
+
+            
+            <section class="survey">
+                <h2>Overall Survey</h2>
+                <div class="survey-cards">
+                    <div class="survey-card">$356 <br><span>Weekly Donations</span></div>
+                    <div class="survey-card">1500<br> <span>Half-yearly Book Distributed</span></div>
+                    <div class="survey-card">$55805 <br><span>Annual Prasadam sales</span></div>
+                    <div class="survey-card">$1556159<br> <span>Yearly fund raising</span></div>
+                </div>
+                <div class="chart-placeholder">
+                    <img src="assests/Screenshot 2025-01-18 224236.png" alt="graph" style="width: 900px;">
+                </div>
+            </section>
+
+            <section class="survey">
+                <div class="survey-cards">
+                    <div class="survey-card">1000 <br><span>Free Meal Distribution Daily</span></div>
+                    <div class="survey-card">$1500<br> <span>Gorakshan Daan Annually</span></div>
+                    <div class="survey-card">50 <br><span>Villages Served Annually</span></div>
+                    <div class="survey-card">100<br> <span>Harinam Sankirtan Sessions Annually</span></div>
+                </div>
+                <div class="chart-placeholder">
+                    <img src="assests/Screenshot 2025-01-18 224236.png" alt="graph" style="width: 900px;">
+                </div>
+            </section>
+        </main>
+    </div>
+    <script>
+        function showForm() {
+            document.getElementById('formContainer').style.display = 'block';
+            document.getElementById('overlay').style.display = 'block';
+        }
+
+        function hideForm() {
+            document.getElementById('formContainer').style.display = 'none';
+            document.getElementById('overlay').style.display = 'none';
+        }
+
+        function submitForm(event) {
+            event.preventDefault();
+            hideForm();
+            const popupMessage = document.getElementById('popupMessage');
+            popupMessage.style.display = 'block';
+            setTimeout(() => {
+                popupMessage.style.display = 'none';
+            }, 2000);
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="style.js"></script>
+    <script src="r.js"></script>
+
+</body>
+</html>
+
+<!-- <div style: "background-color: linear-gradient(135deg, #2575fc, #6a11cb);"</div>-->

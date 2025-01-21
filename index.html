@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISCKON/NVCC/home.page</title>
+    <link rel="icon" href="assests/iskcon_logo-removebg-preview.png" type="png">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="py-2 bg-body-tertiary border-bottom">
+        <div class="navbar">
+            <div class="container d-flex flex-wrap justify-content-between align-items-center position-relative">
+                <!-- Left Navigation Links -->
+                <ul class="nav me-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link link-body-emphasis px-2" data-heading="Home">
+                            <span class="icon"><img src="assests/home.png" width="40px" alt=""></span>
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="encyclo.html" class="nav-link link-body-emphasis px-2" data-heading="Encyclopaedia">
+                            <span class="icon"><img src="assests/books.png" width="40px" alt=""></span>
+                            <span class="text">Encyclopedia</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactus.html" class="nav-link link-body-emphasis px-2" data-heading="Contact Us">
+                            <span class="icon"><img src="assests/contactus.png" width="40px" alt=""></span>
+                            <span class="text">Contact Us</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link link-body-emphasis px-2" data-heading="ISKCON">
+                            <span class="icon"><img src="assests/temp.png" width="40px" alt=""></span>
+                            <span class="text">ISKCON</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Centered ISKCON Logo -->
+                <a class="navbar-brand mx-auto" href="#">
+                    <img src="assests/iskcon_logo-removebg-preview.png" width="150" alt="ISKCON Logo">
+                </a>
+
+                <!-- Right Navigation Links (Search & Login) -->
+                <div class="d-flex align-items-center">
+                    <form class="d-flex me-3">
+                        <input class="form-control form-control-lg" type="search" placeholder="Search..." aria-label="Search">
+                    </form>
+                    <a class="popbtn btn btn-outline-primary btn-md" href="#" onclick="showPopup()">
+                        <ion-icon name="log-in-outline"></ion-icon> Login
+                    </a>
+                    <div id="loginPopup" style="display: none;">
+                      <div class="logincontainer">
+                        <div class="form-box">
+                            <img src="assests/iskcon_logo-removebg-preview.png" alt="ISKCON Logo" class="logo">
+                            <h2 class="form-title">Login</h2>
+                            <p class="subtitle">Sign in to continue</p>
+                            <form id="loginForm" class="form">
+                                <div class="form-group">
+                                    <label for="username">Username</label>
+                                    <input type="text" id="username" name="username" placeholder="Enter your name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                                </div>
+                                <a href="dashboard.html" class="loginbtn">Sign In</a>
+                            
+                            </form>
+                          
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Motivational Shloks Section -->
+    <section class="krishna-message">
+        <div class=" text-center h2">
+         
+            <p id="motivational-text">""</p>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assests/ccc1.jpg" class="d-block w-100" alt="First slide">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="assests/ccc2.jpg" class="d-block w-100" alt="Second slide">
+             
+            </div>
+            <div class="carousel-item">
+                <img src="assests/ccc3.jpg" class="d-block w-100" alt="Third slide">
+                
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- cards books -->
+    <div class=" px-4 py-5" id="custom-cards">
+     
+      <h2  class=" heading pb-2 border-bottom ">Spiritual Enlightenment</h2>
+  
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        
+  
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('assests/g2.jpg'); background-position-y: top; background-repeat: no-repeat;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Krishna Consciousness in Daily Life</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                 <a href="encyclo.html"> <button class="expbtn btn btn-primary">Explore more</button></a>
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('assests/vedas.jpg'); background-repeat: no-repeat;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Vedas are the perfect words of God spiritual knowledge</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                <a href="encyclo.html">  <button class="expbtn btn btn-primary">Explore more</button></a>
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('assests/prabhu.jpg');background-position-y:30% ; background-size:500px;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Our Founder Acharya – Srila Prabhupada</h3>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                 <a href="encyclo.html"> <button class="expbtn btn btn-primary">Explore more</button></a>
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+<!-- hero section chapter 1 -->
+<div class="row pb-0 pe-lg-0 pt-lg-5  align-items-center rounded-3 border shadow-lg">
+    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+      <h1 class="display-4 fw-bold lh-1 text-body-emphasis">CHAPTER 1:Bhagavad Gita</h1>
+      <p class="lead">
+        धृतराष्ट्र उवाच |<br>
+        धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः |<br>
+        मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय || १-१||<br><br>
+        Explanation: This verse sets the scene for the entire Bhagavad Gita. It is a question posed by the blind king Dhritarashtra to his charioteer Sanjaya.
+    </p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+      <a href="encyclo.html">  <button type="button" class="herobtn btn btn-outline-primar btn-lg px-4" fdprocessedid="x1uspd">Read More</button></a>
+      </div>
+    </div>
+    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+        <img class="rounded-lg-3" src="assests/hero2.jpg" alt="" width="450" height="500px" >
+    </div>
+  </div>
+<!-- life cycle section -->
+<div class="container py-5">
+  <div class="row text-center">
+    <!-- Birth and Early Life -->
+    <div class="col-lg-4">
+      <img src="assests/life1.jpg" alt="Krishna's Birth"    class="krishna-img"    class="rounded-circle"  width="200" >
+      <h2 class="fw-normal">Birth and Childhood</h2>
+      <p>Born in Mathura to Devaki and Vasudeva, Krishna's early life was spent in Gokul and Vrindavan, where he performed many miracles.</p>
+      <p><a class="lbtn btn btn-primary btn-md py-2 mt-2" href="encyclo.html">Learn More »</a></p>
+    </div>
+
+    <!-- Youth and Leelas -->
+    <div class="col-lg-4">
+      <img src="assests/life2.jpg" alt="Krishna's Youth"   class="krishna-img"  class="rounded-circle" width="200" >
+      <h2 class="fw-normal">Youth and Leelas</h2>
+      <p>Krishna captivated Vrindavan with his divine play, including lifting Govardhan Hill and the Raas Leela with the divine  Gopis.</p>
+      <p><a class="lbtn btn btn-primary btn-md py-2 mt-2" href="encyclo.html">Learn More »</a></p>
+    </div>
+
+    <!-- Kurukshetra and Teachings -->
+    <div class="col-lg-4">
+      <img src="assests/life3.jpg" alt="Krishna's Teachings"  class="krishna-img"   class="rounded-circle" width="200" height="200"  >
+      <h2 class="fw-normal">Teachings and Legacy</h2>
+      <p>In Kurukshetra, Krishna delivered the Bhagavad Gita, guiding Arjuna and leaving a legacy of devotion and dharma.</p>
+      <p><a class="lbtn btn btn-primary btn-md  py-2 mt-2" href="encyclo.html">Learn More »</a></p>
+    </div>
+  </div>
+</div>
+
+  <!-- form button -->
+  <div class="text-center py-5">
+    <h2 class="mb-3">Get in Touch with Us!</h2>
+    <p class="mb-4">Fill out our quick form and let us know how we can assist you. Your feedback and queries are important to us.</p>
+  <a href="contactus.html">
+    <button class="btn-form d-inline-flex align-items-center px-4 py-2" type="button">
+      Fill the Form
+      <ion-icon name="arrow-redo-outline" class="p-1"></ion-icon>
+    </button>
+  </a>
+  </div>
+
+ <!-- Footer Section -->
+<!-- Footer Section -->
+<footer class="iskcon-footer">
+  <div class="footer-container">
+    <!-- About ISKCON Section -->
+    <div class="footer-about">
+      <img src="assests/iskcon_logo-removebg-preview.png" alt="ISKCON Logo" class="footer-logo">
+      <h2>About ISKCON</h2>
+      <p>ISKCON is a global spiritual organization founded in 1966 by A.C. Bhaktivedanta Swami Prabhupada. ISKCON's mission is to spread the practice of Bhakti Yoga and bring people closer to Lord Krishna.</p>
+    </div>
+
+    <!-- Our Services Section -->
+    <div class="footer-services">
+      <h3>Our Services</h3>
+      <ul>
+        <li><img src="https://storage.ning.com/topology/rest/1.0/file/get/2515182751?profile=original" alt="Service 1" class="service-img">Temples and Worship</li>
+        <li><img src="https://www.iskconbhiwandi.org/images/volunteer/volunteer-6.webp" alt="Service 2" class="service-img">Spiritual Classes</li>
+        <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZwSzXBsr_zfRmalrlWNDIGrJADgeF-v8sbyFxNj4BaNcm7JHfHI8yYaMo7Tq9PQXhKGQ&usqp=CAU" alt="Service 3" class="service-img">Community Development</li>
+        <li><img src="https://torontokrishna.com/wp-content/uploads/2021/01/WhatsApp-Image-2021-01-15-at-11.03.50-AM-1024x603.jpg" alt="Service 4" class="service-img">Books and Literature</li>
+      </ul>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>For more information, please feel free to get in touch with us:</p>
+      <ul>
+        <li><strong>Email:</strong> info@iskcon.org</li>
+        <li><strong>Phone:</strong> +1 123 456 7890</li>
+        <li><strong>Address:</strong> ISKCON Temple, Main Street, City, Country</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer Bottom Section with Copyright -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 ISKCON. All Rights Reserved.</p>
+  </div>
+</footer>
+  <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
