@@ -248,19 +248,45 @@ h2.fw-normal {
   letter-spacing: 2px;
   margin: 2rem 0;
   padding: 1rem;
-  background: linear-gradient(135deg, #ff9a8b, #ff6a00); /* Gradient background */
+ /* Gradient background */
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
   transition: all 0.3s ease;
 }
 
 /* Hover effect for the heading */
-.heading:hover {
-  color: #fff;
-  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Change gradient on hover */
-  transform: scale(1.05); /* Slightly enlarge the heading */
+.heading {
+  position: relative;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333; /* Neutral, professional text color */
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid #ddd; /* Subtle underline */
+  text-align: center;
+  transition: color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
 }
 
+.heading:hover {
+  color: #1a73e8; /* Professional blue for hover text */
+  transform: scale(1.05); /* Subtle enlargement */
+  border-color: #1a73e8; /* Match border to hover color */
+}
+
+.heading::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: #1a73e8; /* Blue underline animation */
+  transition: width 0.3s ease;
+}
+
+.heading:hover::after {
+  width: 100%; /* Expand underline on hover */
+}
 /* Additional styling for the border-bottom */
 .pb-2 {
   padding-bottom: 0.5rem;
